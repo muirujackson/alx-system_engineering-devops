@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#display pid on the current bash
+echo "$$"
