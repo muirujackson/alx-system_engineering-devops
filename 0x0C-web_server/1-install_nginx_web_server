@@ -3,5 +3,6 @@
 apt-get -y update
 apt-get -y install nginx
 service nginx start
+chown -R $USER:$USER /var/www/html
 echo 'Hello World!' | tee /var/www/html/index.html
 service nginx restart
