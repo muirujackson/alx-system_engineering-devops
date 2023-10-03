@@ -11,15 +11,9 @@ printf %s "global
     log 127.0.0.1 local0 notice
     maxconn 2000
     user haproxy
-    h1-case-adjust content-length Content-Length
-    h1-case-adjust accept-ranges Accept-Ranges
-    h1-case-adjust content-type Content-Type
-    h1-case-adjust x-served-by X-Served-By
-    h1-case-adjust content-range Content-Range
     group haproxy
 defaults
     log     global
-    option h1-case-adjust-bogus-client
     mode    http
     option  httplog
     option  dontlognull
