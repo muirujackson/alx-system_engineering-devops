@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # change user to the passed as an argument
-su $1
+su -u "$1"
 whoami
