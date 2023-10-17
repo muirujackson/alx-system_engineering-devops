@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# change user to the passed as an argument
+su $1
+whoami
